@@ -73,4 +73,25 @@ func main() {
 	s = string(s1)
 	fmt.Println(s)
 
+	//constants
+	// you can define const blocks also
+	const user string = "Monika"
+
+	const (
+		firstname = "John"
+		lastname  = "Doe"
+	)
+	fmt.Println(user, firstname, lastname)
+
+	// it increments the value called enumerator use with iota
+	const (
+		ab = iota + 1
+		_
+		bc
+		ef
+		gh
+	)
+
+	fmt.Println(ab, bc, ef, gh)
+
 }
